@@ -61,67 +61,51 @@
 }
 .hero {
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 .carousel {
-  display: flex;
-  flex-direction: row;
   gap: 10px;
-  font-size: 0.9rem;
-  color: var(--main-highligh-text);
-  text-transform: uppercase;
-  position: relative;
-  justify-content: center;
-  align-self: center;
-  align-content: center;
-}
-.carousel-rec {
   display: flex;
-  justify-content: flex-end;
+  color: var(--main-highligh-text);
 }
 
-.carousel i {
-  font-size: 1.2rem;
+.carousel-items {
+  justify-self: flex-end;
+  position: relative;
 }
+
 .ractange {
   background-image: url("./images/Ring-copy.png");
-  position: absolute;
   background-color: transparent;
   height: 369px;
   width: 400px;
   background-repeat: no-repeat;
-  top: 35%;
   z-index: 0.8;
+  justify-content: center;
 }
-
 .hero-text {
+  width: 40%;
   position: absolute;
-  z-index: 0.9;
-  width: 288px;
-  height: 100%;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  align-content: flex-end;
-  padding-right: 80px;
-  left: 59%;
-  margin-top: 59px;
+  top: 30%;
+  left: -20%;
 }
 .hero-text h2 {
   color: var(--text-color);
   /* padding-bottom: 20px; */
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-top: -50px;
   font-family: "Montserrat", sans-serif;
   margin-top: -5px;
+  margin-bottom: 60px;
 }
 .hero-text a {
   padding-left: 60px;
   font-family: "Montserrat", sans-serif;
   color: var(--main-highligh-text);
+  text-transform: uppercase;
+  padding-left: 25px;
 }
